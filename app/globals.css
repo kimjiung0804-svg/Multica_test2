@@ -162,3 +162,26 @@
 @utility animate-pulse-ring {
   animation: pulse-ring 2.8s ease-out infinite;
 }
+
+@keyframes page-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@utility animate-page-in {
+  animation: page-in 0.45s ease-out both;
+}
+
+/* Shared interactive affordances */
+@layer utilities {
+  .hover-lift {
+    @apply transition duration-300 hover:-translate-y-1 hover:shadow-[0_16px_40px_rgba(10,22,40,0.1)];
+  }
+  .btn-primary-motion {
+    @apply transition duration-300 hover:bg-[#0070a8] hover:shadow-[0_10px_28px_rgba(0,136,203,0.35)] active:translate-y-px;
+  }
+}

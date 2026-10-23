@@ -37,14 +37,14 @@ export default function HomePage() {
             <div className="animate-fade-up mt-8 flex flex-wrap gap-3 [animation-delay:220ms]">
               <Button
                 render={<Link href="/solution" />}
-                className="h-11 rounded-none bg-[#0088CB] px-7 text-sm font-semibold tracking-wide text-white hover:bg-[#0070a8]"
+                className="btn-primary-motion h-11 rounded-none bg-[#0088CB] px-7 text-sm font-semibold tracking-wide text-white"
               >
                 Explore Solutions
               </Button>
               <Button
                 render={<Link href="/contact" />}
                 variant="outline"
-                className="h-11 rounded-none border-white/35 bg-transparent px-7 text-sm font-semibold tracking-wide text-white hover:bg-white/10 hover:text-white"
+                className="h-11 rounded-none border-white/35 bg-transparent px-7 text-sm font-semibold tracking-wide text-white transition duration-300 hover:border-white hover:bg-white/10 hover:text-white"
               >
                 Contact Us
               </Button>
@@ -181,7 +181,7 @@ export default function HomePage() {
             </dl>
             <Button
               render={<Link href="/contact" />}
-              className="mt-8 h-11 rounded-none bg-[#0088CB] px-7 text-sm font-semibold tracking-wide text-white hover:bg-[#0070a8]"
+              className="btn-primary-motion mt-8 h-11 rounded-none bg-[#0088CB] px-7 text-sm font-semibold tracking-wide text-white"
             >
               Get in Touch
             </Button>

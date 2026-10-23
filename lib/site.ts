@@ -88,15 +88,4 @@ export const products = [
   },
 ] as const
 
-export const newsPosts = [
-  {
-    slug: "pad-placement-software",
-    title: "Development of pad placement software",
-    excerpt:
-      "Developed electrical design automation software for the efficient PAD placement of system IC based on Artificial Intelligence algorithm....",
-    author: "JeongHwan Yoon",
-    date: "2022년 5월 12일",
-    readTime: "1분 분량",
-    image: "/images/news-pad.jpg",
-  },
-] as const
+export { newsPosts, getNewsPost } from "@/lib/news"

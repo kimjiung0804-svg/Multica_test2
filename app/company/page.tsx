@@ -78,22 +78,13 @@ export default function CompanyPage() {
           <h2 className="font-heading text-3xl font-semibold tracking-tight text-[#0a1628]">
             Our Partners
           </h2>
-          <p className="mt-3 max-w-2xl text-sm text-[#5f6360] sm:text-base">
-            We collaborate with universities and industry partners through the
-            AI-EDA consortium and customer engagements across semiconductor
-            design.
-          </p>
-          <div className="mt-10 grid gap-4 sm:grid-cols-3">
-            {["AI-EDA Consortium", "University Partners", "Industry Partners"].map(
-              (label) => (
-                <div
-                  key={label}
-                  className="flex min-h-28 items-center justify-center border border-[#e5e8ec] bg-[#fafafa] px-4 text-center text-sm font-semibold tracking-wide text-[#0a1628]/75"
-                >
-                  {label}
-                </div>
-              )
-            )}
+          <div className="relative mt-8 aspect-[16/7] overflow-hidden bg-[#eef5fb]">
+            <Image
+              src="/images/partner.jpg"
+              alt="Our partners"
+              fill
+              className="object-cover transition duration-700 hover:scale-105"
+            />
           </div>
           <dl className="mt-12 space-y-2 text-sm text-[#0a1628]/80">
             <div>
@@ -105,7 +96,7 @@ export default function CompanyPage() {
               <dd className="inline">
                 <a
                   href={`mailto:${site.email}`}
-                  className="text-[#0088CB] hover:underline"
+                  className="text-[#0088CB] transition-colors hover:underline"
                 >
                   {site.email}
                 </a>
