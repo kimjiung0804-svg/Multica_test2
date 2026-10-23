@@ -51,30 +51,26 @@ export default function ProductPage() {
       <section className="bg-[#0a1628] py-16 text-white sm:py-20">
         <div className="mx-auto grid max-w-6xl items-center gap-10 px-4 sm:px-6 lg:grid-cols-2">
           <div>
-            <p className="text-xs font-semibold tracking-[0.2em] text-[#5E97FF] uppercase">
+            <h2 className="font-heading text-3xl font-semibold tracking-tight">
               Our Clients
-            </p>
-            <h2 className="font-heading mt-3 text-3xl font-semibold tracking-tight">
-              Trusted by semiconductor design teams
             </h2>
             <p className="mt-4 text-sm leading-relaxed text-white/70 sm:text-base">
-              From AI-based pad placement to wafer test analysis, our tools help
-              teams ship better silicon faster. Reach out for demos and customer
-              success stories.
+              If you want to get more detail information or customer success
+              story, please contact us.
             </p>
             <Button
               render={<Link href="/contact" />}
-              className="mt-8 h-11 rounded-none bg-[#0088CB] px-7 text-sm font-semibold tracking-wide text-white hover:bg-[#0070a8]"
+              className="btn-primary-motion mt-8 h-11 rounded-none bg-[#0088CB] px-7 text-sm font-semibold tracking-wide text-white"
             >
-              Request a Demo
+              Contact Us
             </Button>
           </div>
           <div className="relative aspect-[2/1] overflow-hidden">
             <Image
               src="/images/clients.jpg"
-              alt="Client collaboration"
+              alt="Our clients"
               fill
-              className="object-cover"
+              className="object-cover transition duration-700 hover:scale-105"
             />
           </div>
         </div>

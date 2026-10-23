@@ -28,3 +28,9 @@ restricted.
 
 Optional replacements: Unsplash / Picsum semiconductor, lab, and city imagery
 matching the original aspect ratios if CDN assets must be removed.
+
+## News content source
+
+| Slug | Original URL | Notes |
+|---|---|---|
+| `pad-placement-software` | `/post/간편하게-블로그-관리하기` | Full article body extracted from the live post (Core Technology / Tool Performance / Application Area). Alias `/post/...` redirects to `/news/pad-placement-software`. |
